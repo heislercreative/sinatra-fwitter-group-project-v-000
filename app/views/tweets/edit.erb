@@ -5,7 +5,7 @@
 <form method="post" action="/tweets/<%= @tweet.id %>">
   <input type="hidden" id="hidden" name="_method" value="patch">
 
-  <textarea name="content" rows="4" cols="55" maxlength="280" required><%= @tweet.content %></textarea>
+  <textarea name="content" id="content" rows="4" cols="55" maxlength="280" required><%= @tweet.content %></textarea>
 
   <br><br>
 

@@ -10,13 +10,13 @@
 
 <% if @wrong_username %>
   <div class="alert alert-danger" role="alert">
-    Could not find account with that email. Please try again or <a href="/signup">sign up</a>.
+    Could not find account with that username. Please try again or <a href="/signup">sign up</a>.
   </div>
 <% end %>
 
 <form method="post" action="/login">
-  <label>Email: </label>
-  <input type="text" name="email" placeholder="example@email.com" required>
+  <label>Username: </label>
+  <input type="text" id="username" name="username" placeholder="Username" required>
 
   <br><br>
 
@@ -31,5 +31,5 @@
 <hr>
 
 <form action="/">
-  <input type="submit" value="Return to Homepage">
+  <input type="submit" id="submit" value="Return to Homepage">
 </form>

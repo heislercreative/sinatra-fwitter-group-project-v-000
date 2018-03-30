@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
         @wrong_password = true
         erb :login
       else
-        @wrong_email = true
+        @wrong_username = true
         erb :login
       end
     end
